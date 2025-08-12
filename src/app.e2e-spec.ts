@@ -4,6 +4,7 @@ import request from 'supertest';
 import { App } from 'supertest/types';
 import { AppModule } from './app.module';
 import { JestSetupE2E } from './config/jest/jest-setup.e2e';
+import { JEST_TIMEOUT } from './config/constants/jest-timeout';
 
 describe('AppController (e2e)', () => {
   let app: INestApplication<App>;
@@ -12,7 +13,7 @@ describe('AppController (e2e)', () => {
 
   beforeAll(async () => {
     await setup.init();
-  });
+  }, JEST_TIMEOUT);
 
   afterAll(async () => {
     await setup.close();
