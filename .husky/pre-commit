@@ -1,1 +1,1 @@
-lint-staged && npm run test && npm run build && npm audit --audit-level=high
+lint-staged && npm run test && npm run test:e2e && npm run build && npm audit --audit-level=high
