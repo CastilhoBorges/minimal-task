@@ -1,7 +1,7 @@
 {
   "name": "minimal-task-api",
   "version": "0.0.1",
-  "description": "API for managin tasks with minimal features",
+  "description": "API for managing tasks with minimal features",
   "author": "Augusto Castilho Borges",
   "private": true,
   "license": "UNLICENSED",
@@ -31,12 +31,16 @@
     "rxjs": "^7.8.1"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
     "@commitlint/types": "^19.8.1",
     "@eslint/eslintrc": "^3.2.0",
     "@eslint/js": "^9.18.0",
     "@nestjs/cli": "^11.0.0",
     "@nestjs/schematics": "^11.0.0",
     "@nestjs/testing": "^11.0.1",
+    "@swc/cli": "^0.7.8",
+    "@swc/core": "^1.13.3",
     "@types/express": "^5.0.0",
     "@types/jest": "^30.0.0",
     "@types/node": "^22.10.7",
