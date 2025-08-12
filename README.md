@@ -8,6 +8,7 @@ MinimalTask é um gerenciador de tarefas simples, mas extremamente focado em pro
 - **Node.js 22** — Ambiente de execução JavaScript moderno e otimizado
 - **npm** — Gerenciador de pacotes oficial do Node.js
 - **Docker Compose** — Orquestração de serviços e dependências do projeto
+- **CI/CD** — Pipeline automatizado de integração e entrega contínua
 
 ## 📦 Serviços no Docker Compose
 
