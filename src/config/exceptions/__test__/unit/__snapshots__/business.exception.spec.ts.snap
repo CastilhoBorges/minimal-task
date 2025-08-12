@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BusinessException should create an instance of BusinessException with correct properties 1`] = `
+{
+  "message": "Invalid business logic",
+  "metadata": {
+    "code": "INVALID_ACTION",
+  },
+  "name": "BusinessException",
+  "stack": undefined,
+  "statusCode": 400,
+}
+`;
+
+exports[`BusinessException should create an instance with only message 1`] = `
+{
+  "message": "Invalid business logic",
+  "metadata": undefined,
+  "name": "BusinessException",
+  "stack": undefined,
+  "statusCode": 400,
+}
+`;

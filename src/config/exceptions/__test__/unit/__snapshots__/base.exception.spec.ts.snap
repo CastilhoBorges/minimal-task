@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BaseException should create an instance with all parameters 1`] = `
+{
+  "message": "This is a complex error",
+  "metadata": {
+    "debug": true,
+  },
+  "name": "ComplexError",
+  "stack": "Error: Something went wrong
+ at someFile.ts:10:5",
+  "statusCode": 403,
+}
+`;
+
+exports[`BaseException should create an instance with metadata 1`] = `
+{
+  "message": "This is a test error",
+  "metadata": {
+    "errorCode": 1234,
+    "key": "value",
+  },
+  "name": "TestError",
+  "stack": undefined,
+  "statusCode": 404,
+}
+`;
+
+exports[`BaseException should create an instance with required parameters 1`] = `
+{
+  "message": "This is a test error",
+  "metadata": undefined,
+  "name": "TestError",
+  "stack": undefined,
+  "statusCode": 400,
+}
+`;
+
+exports[`BaseException should create an instance with stack trace 1`] = `
+{
+  "message": "This is a test error",
+  "metadata": undefined,
+  "name": "TestError",
+  "stack": "Error: Something went wrong
+ at someFile.ts:10:5",
+  "statusCode": 500,
+}
+`;

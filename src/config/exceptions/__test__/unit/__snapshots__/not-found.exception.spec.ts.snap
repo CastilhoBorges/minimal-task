@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NotFoundException should create an instance of NotFoundException with correct properties 1`] = `
+{
+  "message": "The requested resource could not be found",
+  "metadata": {
+    "code": "RESOURCE_NOT_FOUND",
+  },
+  "name": "NotFoundException",
+  "stack": undefined,
+  "statusCode": 404,
+}
+`;
+
+exports[`NotFoundException should create an instance with only message 1`] = `
+{
+  "message": "The requested resource could not be found",
+  "metadata": undefined,
+  "name": "NotFoundException",
+  "stack": undefined,
+  "statusCode": 404,
+}
+`;
