@@ -25,7 +25,7 @@ docker compose up -d
 
 ```bash
 git clone https://github.com/CastilhoBorges/minimal-task.git
-cd minimaltask
+cd minimal-task
 ```
 
 ### Instale as dependências
