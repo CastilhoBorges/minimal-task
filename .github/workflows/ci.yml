@@ -1,0 +1,40 @@
+name: Validation Pipeline
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - '**'
+  merge_group:
+    branches:
+      - master
+
+jobs:
+  validation:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.x
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run lint
+        run: npm run lint
+      
+      - name: Run e2e tests
+        run: npm run test:e2e
+
+      - name: Run unit tests and e2e
+        run: npm test
+
+      - name: Build project
+        run: npm run build

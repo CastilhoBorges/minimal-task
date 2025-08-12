@@ -3,9 +3,20 @@ import { INestApplication } from '@nestjs/common';
 import request from 'supertest';
 import { App } from 'supertest/types';
 import { AppModule } from './app.module';
+import { JestSetupE2E } from './config/jest/jest-setup.e2e';
 
 describe('AppController (e2e)', () => {
   let app: INestApplication<App>;
+
+  const setup = new JestSetupE2E();
+
+  beforeAll(async () => {
+    await setup.init();
+  });
+
+  afterAll(async () => {
+    await setup.close();
+  });
 
   beforeEach(async () => {
     const moduleFixture: TestingModule = await Test.createTestingModule({

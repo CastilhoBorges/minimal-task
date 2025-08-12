@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`GlobalExceptionFilter should handle a BaseException and match snapshot 1`] = `
+[MockFunction] {
+  "calls": [
+    [
+      {
+        "message": "Business logic error",
+        "statusCode": 400,
+      },
+    ],
+  ],
+  "results": [
+    {
+      "type": "return",
+      "value": undefined,
+    },
+  ],
+}
+`;
+
+exports[`GlobalExceptionFilter should handle a generic Error and match snapshot 1`] = `
+[MockFunction] {
+  "calls": [
+    [
+      {
+        "message": "Unexpected server failure",
+        "statusCode": 500,
+      },
+    ],
+  ],
+  "results": [
+    {
+      "type": "return",
+      "value": undefined,
+    },
+  ],
+}
+`;
+
+exports[`GlobalExceptionFilter should handle an HttpException and match snapshot 1`] = `
+[MockFunction] {
+  "calls": [
+    [
+      {
+        "message": "Unauthorized access",
+        "statusCode": 401,
+      },
+    ],
+  ],
+  "results": [
+    {
+      "type": "return",
+      "value": undefined,
+    },
+  ],
+}
+`;
+
+exports[`GlobalExceptionFilter should handle an unknown exception and match snapshot 1`] = `
+[MockFunction] {
+  "calls": [
+    [
+      {
+        "message": "An unexpected error occurred",
+        "statusCode": 500,
+      },
+    ],
+  ],
+  "results": [
+    {
+      "type": "return",
+      "value": undefined,
+    },
+  ],
+}
+`;
